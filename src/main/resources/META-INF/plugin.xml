@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>org.example.IdeaLibsql</id>
+    <name>temp</name>
+    <vendor email="support1@yourcompany.com" url="http://www.yourco1mpany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+    safdasdfasdasd
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <group id="temp.helloAction" text="test" description="test">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action class="org.example.Test" id="temp.actions.helloAction" text="say hello"/>
+        </group>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
