@@ -13,13 +13,9 @@
     <depends optional="true" config-file="withKotlin.xml">org.jetbrains.kotlin</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <codeInsight.lineMarkerProvider language="JAVA"
-                                        implementationClass="org.example.Test2"/>
+        <psi.referenceContributor implementation="org.example.SearchLibSqlProvider"/>
     </extensions>
 
     <actions>
-        <group id="temp.helloAction" text="test11" description="test12" >
-            <add-to-group group-id="MainMenu" anchor="last"/>
-        </group>
     </actions>
 </idea-plugin>
