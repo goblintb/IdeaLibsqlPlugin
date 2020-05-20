@@ -1,25 +1,25 @@
 <idea-plugin>
     <id>org.example.IdeaLibsql</id>
     <name>temp</name>
-    <vendor email="support1@yourcompany.com" url="http://www.yourco1mpany.com">YourCompany</vendor>
+    <vendor email="support1@yourcompany.com" url="http://www.yourco1mpany.com">TOPS BI</vendor>
 
     <description><![CDATA[
-    safdasdfasdasd
+    Поддержка IDEA работы с библиотекой JPA с названием LibSql
     ]]></description>
 
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
+    <depends optional="true" config-file="withKotlin.xml">org.jetbrains.kotlin</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
+        <codeInsight.lineMarkerProvider language="JAVA"
+                                        implementationClass="org.example.Test2"/>
     </extensions>
 
     <actions>
-        <group id="temp.helloAction" text="test" description="test">
+        <group id="temp.helloAction" text="test11" description="test12" >
             <add-to-group group-id="MainMenu" anchor="last"/>
-            <action class="org.example.Test" id="temp.actions.helloAction" text="say hello"/>
         </group>
-        <!-- Add your actions here -->
     </actions>
 </idea-plugin>
