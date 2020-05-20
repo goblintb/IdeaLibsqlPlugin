@@ -1,7 +1,7 @@
 <idea-plugin>
-    <id>org.example.IdeaLibsql</id>
+    <id>org.goblintb.IdeaLibsql</id>
     <name>temp</name>
-    <vendor email="support1@yourcompany.com" url="http://www.yourco1mpany.com">TOPS BI</vendor>
+    <vendor email="goblintb@mail.ru" url="nosite">TOPS BI</vendor>
 
     <description><![CDATA[
     Поддержка IDEA работы с библиотекой JPA с названием LibSql
@@ -13,7 +13,7 @@
     <depends optional="true" config-file="withKotlin.xml">org.jetbrains.kotlin</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <psi.referenceContributor implementation="org.example.SearchLibSqlProvider"/>
+        <psi.referenceContributor implementation="org.goblintb.SearchLibSqlProvider"/>
     </extensions>
 
     <actions>

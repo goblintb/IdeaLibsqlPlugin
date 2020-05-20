@@ -1,4 +1,4 @@
-package org.example;
+package org.goblintb;
 
 import com.intellij.openapi.module.ModuleUtilCore;
 import com.intellij.openapi.project.Project;

@@ -1,4 +1,4 @@
-package org.example;
+package org.goblintb;
 
 import com.intellij.openapi.util.TextRange;
 import com.intellij.patterns.PlatformPatterns;

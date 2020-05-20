@@ -1,4 +1,4 @@
-package org.example;
+package org.goblintb;
 
 import com.intellij.codeInsight.daemon.LineMarkerInfo;
 import com.intellij.codeInsight.daemon.LineMarkerProvider;
