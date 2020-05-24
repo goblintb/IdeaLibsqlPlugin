@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>org.goblintb.IdeaLibsql</id>
     <name>IdeaLibsql</name>
-    <vendor email="goblintb@mail.ru" url="nosite">TOPS BI</vendor>
+    <vendor email="goblintb@mail.ru" url="https://github.com/goblintb/IdeaLibsqlPlugin">TOPS BI</vendor>
 
     <description><![CDATA[
     Поддержка IDEA работы с библиотекой JPA с названием LibSql
