@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>org.goblintb.IdeaLibsql</id>
-    <name>temp</name>
+    <name>IdeaLibsql</name>
     <vendor email="goblintb@mail.ru" url="nosite">TOPS BI</vendor>
 
     <description><![CDATA[
