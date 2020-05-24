@@ -8,6 +8,7 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Ишет строки с ссылками на ресурсы и делает их кликабельными
+ *
  */
 public class SearchLibSqlProvider extends PsiReferenceContributor {
     @Override
@@ -21,9 +22,10 @@ public class SearchLibSqlProvider extends PsiReferenceContributor {
                         PsiLiteralExpression literalExpression = (PsiLiteralExpression) element;
                         String value = literalExpression.getValue() instanceof String ?
                                 (String) literalExpression.getValue() : null;
-                        if ((value != null && value.startsWith("search"))) {
-                            TextRange property = new TextRange(1, value.length()+1);
-                            return new PsiReference[]{new SimpleReference(element, property)};
+                        if ((value != null)) {
+                            TextRange property = new TextRange(1, value.length() + 1);//без кавычек
+                            SimpleReference simpleReference = new SimpleReference(element, property);
+                            return new PsiReference[]{simpleReference};
                         }
                         return PsiReference.EMPTY_ARRAY;
                     }
