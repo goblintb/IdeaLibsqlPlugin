@@ -13,10 +13,10 @@
         <!--
           The <idea-version> element must match the same element in plugin.xml. Required.
         -->
-        <idea-version since-build="181.3" until-build="191.*" />
+        <!-- <idea-version since-build="181.3" until-build="191.*" />-->
     </plugin>
     <plugin id="id.of.different.plugin" url="https://libsql-plugin.herokuapp.com/libs/IdeaLibsql-1.1-RELEASE.jar" version="major.minor">
-        <idea-version since-build="181.3" until-build="191.*" />
+        <!-- <idea-version since-build="181.3" until-build="191.*" />-->
     </plugin>
     <plugin>
         <!-- And so on for other plugins... -->
