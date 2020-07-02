@@ -9,7 +9,7 @@
       url - path to download the plugin JAR/ZIP file. Required. Must be HTTPS
       version - version of this plugin. Required. Must match <version> in plugin.xml
     -->
-    <plugin id="fully.qualified.id.of.this.plugin" url="https://libsql-plugin.herokuapp.com/build/libs/IdeaLibsql-1.1.jar" version="1.1">
+    <plugin id="org.goblintb.idea.libsql" url="https://libsql-plugin.herokuapp.com/build/libs/IdeaLibsql-1.1.jar" version="1.1">
 
     </plugin>
 </plugins>
