@@ -34,5 +34,9 @@ http {
     client_max_body_size <%= ENV['NGINX_CLIENT_MAX_BODY_SIZE'] || 1 %>M;
 
     root /app/build; # path to your app
+    location / {
+        root /app;
+        index updatePlugins.xml;
+    }
   }
 }
