@@ -9,16 +9,7 @@
       url - path to download the plugin JAR/ZIP file. Required. Must be HTTPS
       version - version of this plugin. Required. Must match <version> in plugin.xml
     -->
-    <plugin id="fully.qualified.id.of.this.plugin" url="https://libsql-plugin.herokuapp.com/build/libs/IdeaLibsql-1.1-RELEASE.jar" version="major.minor.update">
-        <!--
-          The <idea-version> element must match the same element in plugin.xml. Required.
-        -->
-        <!-- <idea-version since-build="181.3" until-build="191.*" />-->
-    </plugin>
-    <plugin id="id.of.different.plugin" url="https://libsql-plugin.herokuapp.com/build/libs/IdeaLibsql-1.1-RELEASE.jar" version="major.minor">
-        <!-- <idea-version since-build="181.3" until-build="191.*" />-->
-    </plugin>
-    <plugin>
-        <!-- And so on for other plugins... -->
+    <plugin id="fully.qualified.id.of.this.plugin" url="https://libsql-plugin.herokuapp.com/build/libs/IdeaLibsql-1.1.jar" version="1.1">
+
     </plugin>
 </plugins>

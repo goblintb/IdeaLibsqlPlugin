@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'org.goblintb.il'
-version '1.1-RELEASE'
+version '1.1'
 
 repositories {
     mavenCentral()
@@ -16,11 +16,13 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = '2020.1'
+    version = 'IU-192.7142.36'
     plugins = ['java']
 }
 patchPluginXml {
-    changeNotes """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
+    version project.version
+    sinceBuild '192'
+    untilBuild null
+    pluginDescription = new File('plugin-description.html').getText('UTF-8')
+    changeNotes = new File("change-notes/${version.replace('.', '_')}.html").getText('UTF-8')
 }
